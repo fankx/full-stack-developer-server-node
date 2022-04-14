@@ -23,7 +23,7 @@ const tuitSchema = mongoose.Schema(
       dislikes: { type: Number, default: 0 },
     },
   },
-  { collection: 'Tuit' }
+  { collection: 'tuits' }
 );
 
 export default tuitSchema;
