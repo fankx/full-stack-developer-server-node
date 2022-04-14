@@ -1,10 +1,16 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import cors from 'cors';
 import helloController from './controllers/helloController.js';
 import userController from './controllers/userController.js';
-import tuitsController from './controllers/tuitsController.js';
+import tuitsController from './controllers/tuitController.js';
 
 const app = express();
+
+const CONNECTION_STRING =
+  process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/webdev';
+
+mongoose.connect(CONNECTION_STRING);
 
 app.use(express.json());
 

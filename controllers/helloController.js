@@ -3,4 +3,5 @@ const helloController = (app) => {
     res.send('Life is good!');
   });
 };
+
 export default helloController;

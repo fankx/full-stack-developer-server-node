@@ -1,6 +1,5 @@
 export default [
   {
-    _id: '100',
     topic: 'Elon Musk',
     postedBy: {
       username: 'Elon Musk',
@@ -24,7 +23,6 @@ export default [
     },
   },
   {
-    _id: '101',
     topic: 'New York Post',
     postedBy: {
       username: 'New York Post',
